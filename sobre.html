@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre - Easy Drive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Easy Drive</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="carros.html">Carros</a></li>
+          <li class="nav-item"><a class="nav-link active" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <div class="container mt-5 pt-5">
+    <h1 class="mb-4">Sobre a Easy Drive <span class="badge bg-danger">+10 anos</span></h1>
+    <p class="lead">Na Easy Drive, somos movidos pela paixão por carros esportivos de alto nível. Conectamos pessoas com os veículos mais incríveis do mundo, sempre com segurança e estilo.</p>
+
+    <!-- Seção em Grid -->
+    <div class="row mt-5">
+      <div class="col-md-6">
+        <div class="card shadow-sm mb-4">
+          <img src="assets/images/equipe.jpg" class="card-img-top img-fluid" alt="Equipe Easy Drive"
+     style="max-height: 130px; object-fit: cover; object-position: top;">
+          <div class="card-body">
+            <h5 class="card-title">Nossa Equipe</h5>
+            <p class="card-text">Profissionais apaixonados por carros e prontos para te ajudar a encontrar o veículo dos seus sonhos.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 d-flex align-items-center">
+        <div>
+          <h3 class="mb-3">Nossos Números</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">🚗 <strong>+500</strong> carros alugados por mes</li>
+            <li class="list-group-item">🌍 Atuação em <strong>todo o Brasil</strong></li>
+            <li class="list-group-item">⭐ Avaliação média: <strong>4.9/5</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-5" />
+
+    <div class="container mt-5">
+        <h3>Localização</h3>
+        <div class="ratio ratio-16x9 mb-3" style="height: 400px; width: 100%;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d946.3759582479441!2d-43.1016017304022!3d-22.897420763274006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDUzJzUwLjciUyA0M8KwMDYnMDMuNSJX!5e1!3m2!1spt-BR!2sbr!4v1746470537445!5m2!1spt-BR!2sbr"
+            width="600" 
+            height="900" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+    <!-- Accordion -->
+    <h3 class="mb-3">Nossa filosofia</h3>
+    <div class="accordion" id="accordionSobre">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="missaoHeader">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#missao" aria-expanded="true" aria-controls="missao">
+            Missão
+          </button>
+        </h2>
+        <div id="missao" class="accordion-collapse collapse show" aria-labelledby="missaoHeader" data-bs-parent="#accordionSobre">
+          <div class="accordion-body">
+            Oferecer aluguel dos melhores carros esportivos com atendimento de excelência, promovendo a paixão por dirigir.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="visaoHeader">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#visao" aria-expanded="false" aria-controls="visao">
+            Visão
+          </button>
+        </h2>
+        <div id="visao" class="accordion-collapse collapse" aria-labelledby="visaoHeader" data-bs-parent="#accordionSobre">
+          <div class="accordion-body">
+            Ser referência nacional em aluguel de carros esportivos até 2030.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeader">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq" aria-expanded="false" aria-controls="faq">
+            Perguntas Frequentes
+          </button>
+        </h2>
+        <div id="faq" class="accordion-collapse collapse" aria-labelledby="faqHeader" data-bs-parent="#accordionSobre">
+          <div class="accordion-body">
+            <strong>Posso alugar online?</strong> Sim, todo o processo pode ser iniciado online.<br>
+            <strong>Vocês entregam em todo o Brasil?</strong> Sim, com frete calculado à parte.<br>
+            <strong>Posso agendar um test drive?</strong> Sim, entre em contato pela página de contato.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="alert alert-info mt-5 text-center" role="alert">
+      Quer conhecer nosso catálogo completo? <a href="carros.html" class="btn btn-outline-primary ms-2">Ver carros disponíveis</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

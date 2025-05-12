@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Easy Drive
+    </title>'
+    <style>
+      .carousel-item img {
+      height: 400px;
+      object-fit: cover;
+    }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Easy Drive</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="carros.html" data-trigger = "hover" data-toggle="tooltip" data-placement="top" data-html="true" title="Veja nossos modelos">
+              Carros
+            </a></li>
+            <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="carros/ford-mustang-shelby-gt.html">
+            <img src="assets/images/mustang-shelby-gt.jpg" class="d-block w-100" alt="carro1">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="carros/chevy-camaro-ss.html">
+            <img src="assets/images/camaro-ss.jpg" class="d-block w-100" alt="carro2">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="carros/dodge-challenger-hellcat.html">
+            <img src="assets/images/hellcat.jpg" class="d-block w-100" alt="carro3">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="carros/koenigsegg-jesko.html">
+            <img src="assets/images/jesko.jpg" class="d-block w-100" alt="carro3" style="object-position:unset;">
+          </a>
+        </div>
+      </div>
+
+      <!-- As setas devem estar aqui dentro -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!--"jumbotron"-->
+    <div class="container my-5">
+      <div class="bg-default p-5 rounded text-center shadow-sm">
+        <h1 class="display-6 fw-bold">Bem-vindo à Easy Drive!</h1>
+        <p class="lead">Os melhores carros com os melhores preços</p>
+        <a href="carros.html" class="btn btn-info btn-lg">Conferir catálogo</a>
+      </div>
+    </div>
+
+    <!-- BENEFICIOS -->
+    <div class="container mt-5">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Seguro</h5>
+              <p class="card-text">Todos os nossos veículos possuem seguro com cobertura total.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3 mt-md-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Atendimento</h5>
+              <p class="card-text">Nossa equipe está pronta para te atender com excelência.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3 mt-md-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Facilidade</h5>
+              <p class="card-text">Retire quando e onde quiser, simples e facil.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="toast position-fixed bottom-0 end-0 bg-info m-3" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto">Bootstrap</strong>
+        <small class="text-body-secondary">agora</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Bem-vindo! <a href="carros.html" class="text-dark"> Faca seu orcamento! </a>
+      </div>
+    </div>
+
+    <!-- BENEFICIOS -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <p class="mb-0">&copy; 2025 Easy  Drive. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var toastEl = document.querySelector('.toast');
+        var toast = new bootstrap.Toast(toastEl);
+        toast.show();
+      });
+    </script>
+    
+  </body>
+</html>
